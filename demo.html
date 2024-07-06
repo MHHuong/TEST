@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UI</title>
+        <link rel="website icon" href="image/iconweb.png">
+        <style>
+            .container{
+                display: grid;
+                height: 100vh;
+                grid-template-columns: 1fr 4fr 1fr;
+                grid-template-rows: 50px auto 1fr 100px 80px;
+                grid-template-areas: 
+                    "Header             Header              Header"
+                    "Left-Aside         Main-Content        Right-Aside"
+                    "Left-Aside         Main-Content        Right-Aside"
+                    "Left-Aside         Main-Content        Note"
+                    "Footer             Footer              Footer";
+                grid-gap: 10px;
+                padding: 20px;
+                font-size: 25px;
+                font-weight: 700;
+                .Header{
+                    grid-area: Header;
+                    background-color:chocolate;
+                }
+                .Left-Aside{
+                    grid-area: Left-Aside; 
+                    background-color: darkslateblue;
+                    border: 2px solid;
+                }
+                .Right-Aside{
+                    grid-area: Right-Aside; 
+                    background-color:cornflowerblue;
+                    border: 2px solid;
+                }
+                .Main-Content{
+                    grid-area: Main-Content; 
+                    background-color:aquamarine;
+                    border: 2px solid;
+                }
+                .Note{
+                    grid-area: Note; 
+                    background-color:blueviolet;
+                    border: 2px solid;
+                }
+                .Footer{
+                    grid-area: Footer; 
+                    background-color:crimson;
+                    border: 2px solid;
+                }
+            }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid black;
+            text-align: center;
+            width: 25%;
+            height: 46px;
+        }
+        </style>
+    </head>
+    <body>
+        <span class="container">
+            <span class="Header">
+                <table>
+                    <tr>
+                        <td>
+                            Menu
+                        </td>
+                        <td>
+                            Confestion
+                        </td>
+                        <td>
+                            Blog
+                        </td>
+                        <td>
+                            Ranking
+                        </td>
+                    </tr>
+                </table>
+            </span>
+            <span class="Left-Aside">Left</span>
+            <span class="Right-Aside">Right</span>
+            <span class="Main-Content">Main</span>
+            <span class="Note">
+                Note:
+                <br>
+                Ascess: 100
+                <br>
+                Online: 5
+            </span>
+            <span class="Footer">Footer</span>
+        </span>
+    </body>
+</html>
